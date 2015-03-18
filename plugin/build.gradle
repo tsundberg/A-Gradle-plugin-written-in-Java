@@ -1,0 +1,18 @@
+group = 'se.thinkcode.gradle'
+version = '1.0.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.7
+
+dependencies {
+    compile gradleApi()
+
+    testCompile 'junit:junit:4.12'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
